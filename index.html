@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI CyberNav - Waze Style</title>
+    
+    <!-- Térkép motor stíluslapjai -->
+    <link rel="stylesheet" href="https://unpkg.com" />
+    <link rel="stylesheet" href="https://unpkg.com" />
+    
+    <!-- Saját dizájn fájlunk beágyazása -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Felső AI Vezérlő Panel -->
+    <div id="top-panel">
+        <div class="ai-badge">AI ASSZISZTENS</div>
+        <p id="ai-status" class="ai-text">Koppints bárhova a térképen a Waze-stílusú útvonal létrehozásához...</p>
+    </div>
+
+    <!-- Alsó Navigációs HUD Panel -->
+    <div id="nav-panel">
+        <div class="nav-info-grid">
+            <div class="nav-box">
+                <div class="nav-label">Távolság</div>
+                <div id="route-distance" class="nav-value">0 km</div>
+            </div>
+            <div class="nav-box">
+                <div class="nav-label">Menetidő</div>
+                <div id="route-time" class="nav-value">0 perc</div>
+            </div>
+        </div>
+        <button class="clear-btn" onclick="resetRoute()">Útvonal Törlése</button>
+    </div>
+
+    <!-- Ide rajzolódik a térkép -->
+    <div id="map"></div>
+
+    <!-- Térkép motorok scriptjei -->
+    <script src="https://unpkg.com"></script>
+    <script src="https://unpkg.com"></script>
+
+    <!-- A SAJÁT JAVASCRIPT FÁJLUNK MEGHÍVÁSA -->
+    <script src="script.js"></script>
+</body>
+</html>
+
